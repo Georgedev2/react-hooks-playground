@@ -7,6 +7,13 @@ import CounterWithFix from './components/Counter/CounterWithFix';
 import LoginForm from './components/LoginForm/LoginForm';
 import UserWithFix from './components/User/UserWithFix';
 import LoginFormWithFix from './components/LoginForm/ LoginFormWithFix';
+import LoginFormWithUseReducer from './components/State/UsingUsedState';
+import UserProfile from './components/State/UserProfile';
+import UserProfileWithFix from './components/State/UserProfileFix';
+import FastList from './components/State/FastList';
+import SlowList from './components/State/SlowList';
+import GoodCounter from './components/State/GoodCounter';
+import BadCounter from './components/State/BadCounter';
 function App() {
 const [userId, setUserId] = useState(1);
 
@@ -24,6 +31,17 @@ const [userId, setUserId] = useState(1);
     
     < LoginForm/>
     <LoginFormWithFix/>
+    <LoginFormWithUseReducer/>
+    
+    <UserProfile userId={userId} />
+    <UserProfileWithFix userId={userId} />
+    
+    <p>Fast and slow lists</p>
+    {/* <FastList/> */}
+    {/* <SlowList/> */}
+    
+    <GoodCounter/>
+    <BadCounter/>
   </div>;
 }
 
