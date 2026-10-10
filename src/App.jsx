@@ -14,6 +14,14 @@ import FastList from './components/State/FastList';
 import SlowList from './components/State/SlowList';
 import GoodCounter from './components/State/GoodCounter';
 import BadCounter from './components/State/BadCounter';
+
+// import UncontrolledInput from './components/UncontrolledInput';
+
+import UncontrolledInput from './components/UncontrolledInput/UncontrolledInput';
+import ControlledInput from './components/UncontrolledInput/ControlledInput';
+import MySearchWidget from './components/lookout/MySearchWidget';
+import SearchWidget from './components/lookout/SearchWidget';
+
 function App() {
 const [userId, setUserId] = useState(1);
 
@@ -26,22 +34,28 @@ const [userId, setUserId] = useState(1);
     
     {/* <UserWithFix userId={userId} /> */}
     
-    <CounterWithFix />
-    <Counter/>
+    {/* <CounterWithFix /> */}
+    {/* <Counter/> */}
     
-    < LoginForm/>
-    <LoginFormWithFix/>
-    <LoginFormWithUseReducer/>
+    {/* < LoginForm/> */}
+    {/* <LoginFormWithFix/> */}
+    {/* <LoginFormWithUseReducer/> */}
     
-    <UserProfile userId={userId} />
-    <UserProfileWithFix userId={userId} />
+    {/* <UserProfile userId={userId} /> */}
+    {/* <UserProfileWithFix userId={userId} /> */}
     
     <p>Fast and slow lists</p>
     {/* <FastList/> */}
     {/* <SlowList/> */}
     
-    <GoodCounter/>
-    <BadCounter/>
+    {/* <GoodCounter/> */}
+    {/* <BadCounter/> */}
+    <UncontrolledInput/>
+    <ControlledInput/>
+    
+   <MySearchWidget/>
+   
+   {/* <SearchWidget/> */}
   </div>;
 }
 
